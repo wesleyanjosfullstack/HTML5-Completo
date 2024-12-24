@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+</head>
+<body>
+    <template id="tpl">
+        <li>{{name}}</li>
+    </template>
+    <ul>
+
+    </ul>
+    <button type="button">Add</button>
+    <script type="text/javascript">
+        const btn = document.querySelector('button')
+        const tpl = document.querySelector('#tpl')
+        const ul = document.querySelector('ul')
+
+        btn.addEventListener('click', e => {
+            ul.append(tpl.content.cloneNode(true))
+        })
+    </script>
+</body>
+</html>
