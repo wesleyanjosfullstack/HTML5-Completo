@@ -123,3 +123,8 @@ footer {
     background-color: rgba(0, 0, 0, .15);
     cursor: pointer;
 }
+
+#valueA {
+    width: 100%;
+    padding: 10px;
+}
