@@ -43,3 +43,42 @@ body {
     border-bottom-width: 2px;
     margin-bottom: 10px;
 }
+
+.content-center input:focus {
+    border-bottom-color: #d07335;
+}
+
+.content-center button {
+    background-color: #d07335;
+    color: #fff;
+
+}
+
+.content-center button:hover {
+    background-color: #b55b28;
+    cursor: pointer;
+}
+
+.content-center button:active {
+    background-color: #c14e0e;
+}
+
+header a {
+    color: #666;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #000;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header a:focus {
+    color: red;
+}
+header a:active {
+    color: yellow;
+}
