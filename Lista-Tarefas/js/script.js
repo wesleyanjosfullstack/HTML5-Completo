@@ -28,3 +28,7 @@ data.forEach(task => {
     
     document.querySelector('.to-do').append(li)
 })
+
+document.getElementById('new-task').addEventListener('keyup', e => {
+    if (e.key === 'Enter') console.log(e.target.value)
+})
