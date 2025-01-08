@@ -14,7 +14,7 @@ function renderTodo() {
     
         li.querySelector('input').addEventListener('change', e => {
             if (e.target.checked) li.classList.add('complete')
-            else li.classList.add('remove')
+            else li.classList.remove('complete')
         })
 
         li.querySelector('button').addEventListener('click', e => {
