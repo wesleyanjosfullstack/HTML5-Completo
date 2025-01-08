@@ -16,4 +16,17 @@ document.getElementById('form-login').addEventListener('submit', e => {
     let password = document.getElementById('password').value
     console.log(`Seu e-mail ${email}`)
     console.log(`Seu e-mail ${password}`)
+
+    let json = {
+        email,
+        password
+    }
+
+    console.log(json);
+
+    let stringJSON = JSON.stringify(json)
+    console.log(stringJSON)
+
+    let jsonParse = JSON.parse(stringJSON)
+    console.log(jsonParse)
 })
