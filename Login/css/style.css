@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f2f2f2;
 }
@@ -8,6 +12,7 @@ body {
     width: 100%;
     max-width: 300px;
     margin: auto;
+    padding: 20px;
 }
 
 .content-center .text-center {
@@ -17,3 +22,13 @@ body {
 .content-center img {
     width: 70%;
 }
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input, 
+.content-center button {
+    width: 100%;
+    padding: 10px 5px;
+} 
