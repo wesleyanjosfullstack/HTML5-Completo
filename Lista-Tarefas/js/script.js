@@ -19,8 +19,12 @@ function renderTodo() {
 
         li.querySelector('button').addEventListener('click', e => {
             let todoId = e.target.parentNode.querySelector('input').id.split('-')[1]
-            data = data.filter(task => task.id !== parseInt(todoId))
-            renderTodo()
+            let title = e.target.parentNode.querySelector('label').innerHTML
+            
+            if (confirm(`Deseja realmente excluir a tarefa ${title} ?`)) {
+                data = data.filter(task => task.id !== parseInt(todoId))
+                renderTodo()
+            }
         })
         
         document.querySelector('.to-do').append(li)
