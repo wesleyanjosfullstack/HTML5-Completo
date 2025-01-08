@@ -22,11 +22,15 @@ document.getElementById('form-login').addEventListener('submit', e => {
         password
     }
 
-    console.log(json);
+    // console.log(json);
 
-    let stringJSON = JSON.stringify(json)
-    console.log(stringJSON)
+    // let stringJSON = JSON.stringify(json)
+    // console.log(stringJSON)
 
-    let jsonParse = JSON.parse(stringJSON)
-    console.log(jsonParse)
+    // let jsonParse = JSON.parse(stringJSON)
+    // console.log(jsonParse)
+
+    if (!json.email) console.error('O campo email deve ser preenchido !')
+    else if (!json.password) console.error('O campo password dese ser preenchido !')
+    else console.info('Dados inseridos com sucesso!')
 })
