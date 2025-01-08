@@ -150,6 +150,14 @@ footer {
     cursor: not-allowed;
 }
 
+.to-do button {
+    width: initial;
+    color: #fff;
+    background-color: #f00;
+    float: right;
+    min-width: 30px;
+}
+
 #new-task {
     width: 100%;
     padding: 10px;
