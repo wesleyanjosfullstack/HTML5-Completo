@@ -1,6 +1,3 @@
-const email = 'wesleyanjosfullstack@gmail.com'
-console.log(`Seu endereço de e-mail é ${email}`)
-
 document.getElementById('btn-submit').addEventListener('click', e => {
     console.log('Clique no botão !')
 })
@@ -15,5 +12,8 @@ document.getElementById('form-login').addEventListener('mouseleave', e => {
 
 document.getElementById('form-login').addEventListener('submit', e => {
     e.preventDefault()
-    console.log('Formulário enviado ! Aqui vai o AJAX !')
+    let email = document.getElementById('email').value
+    let password = document.getElementById('password').value
+    console.log(`Seu e-mail ${email}`)
+    console.log(`Seu e-mail ${password}`)
 })
