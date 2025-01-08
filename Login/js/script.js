@@ -1,0 +1,1 @@
+console.log('em uso por wesley')
