@@ -18,7 +18,9 @@ function renderTodo() {
         })
 
         li.querySelector('button').addEventListener('click', e => {
-            console.warn('Você vai deletar este item ?')
+            let todoId = e.target.parentNode.querySelector('input').id.split('-')[1]
+            data = data.filter(task => task.id !== parseInt(todoId))
+            renderTodo()
         })
         
         document.querySelector('.to-do').append(li)
